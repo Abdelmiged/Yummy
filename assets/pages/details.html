@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/logo.png">
+    <link rel="stylesheet" href="../css/dist/all.min.css">
+    <link rel="stylesheet" href="../css/dist/output.css">
+    <link rel="stylesheet" href="../css/dist/style.css">
+    <title>Yummy</title>
+</head>
+<body class="bg-[#0D0D0D]">
+
+    <!-- ========== Loading Screen ========== -->
+    <div class="loading-screen fixed inset-0 bg-black z-50">
+        <span class="loader fixed inline-block"></span>
+    </div>
+    <!-- ========== End Loading Screen ========== -->
+
+    <!-- ========== Sidenav ========== -->
+    <nav class="sidenav fixed top-0 -left-[15.8rem] h-screen flex w-80 transition-all ease-in-out duration-500 z-10">
+        <div class="sidenav__content text-white w-[79%] flex flex-col justify-between p-6 bg-[#0d0d0d]">
+            <div class="sidenav__links overflow-hidden">
+                <ul class="sidenav__links-list overflow-hidden relative -bottom-28">
+                    <li class="sidenav__link sidenav__link-search my-4 relative -bottom-32"><a href="./search.html">Search</a></li>
+                    <li class="sidenav__link sidenav__link-categories my-4 relative -bottom-32"><a href="../../index.html">Categories</a></li>
+                    <li class="sidenav__link sidenav__link-area my-4 relative -bottom-32"><a href="../../index.html">Area</a></li>
+                    <li class="sidenav__link sidenav__link-ingredients my-4 relative -bottom-32"><a href="../../index.html">Ingerdients</a></li>
+                    <li class="sidenav__link sidenav__link-contact my-4 relative -bottom-32"><a href="./contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="sidenav__copyrights">
+                <div class="sidenav__social-links">
+                    <a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.twitter.com"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-solid fa-globe"></i></a>
+                </div>
+                <span>Copyright Â© 2019 All Rights
+                    Reserved.</span>
+            </div>
+        </div>
+        <div class="sidenav__side-bar w-[21%] flex flex-col py-6 px-2 items-center justify-between bg-white">
+            <a class="sidenav__link-home" href="../../index.html"><img class="size-12" src="../images/logo.png" alt="logo"></a>
+            <button class="sidenav__controller-button border-0 outline-0 w-full text-black">
+                <i class="fa-solid fa-bars w-full h-full text-4xl"></i>
+                <i class="fa-solid fa-xmark w-full h-full text-4xl hidden"></i>
+            </button>
+            <div class="flex flex-col text-black space-y-1">
+                <a href="#"><i class="fa-solid fa-globe"></i></a>
+                <a href="#"><i class="fa-solid fa-share-nodes"></i></a>
+            </div>
+        </div>
+    </nav>
+    <!-- ========== End Sidenav ========== -->
+    
+    <!-- ========== Main Content ========== -->
+    <main class="main-content">
+        <div class="container py-6 ps-20 pe-4 flex flex-wrap">
+            <div class="main-content__image-bar p-2 w-full md:w-4/12 text-white">
+                <img class="main-content__image object-cover rounded-md w-full h-96 md:h-48 lg:h-60 xl:h-96" src="" alt="Food">
+                <h2 class="main-content__image-title text-3xl font-semibold mt-2"></h2>
+            </div>
+            <div class="main-content__details-bar p-2 w-full md:w-8/12 text-white">
+                <h2 class="text-3xl font-semibold">Instructions</h2>
+                <p class="main-content__instructions"></p>
+                <div class="main-content__area mt-4 text-3xl font-semibold">
+                    <span>Area: </span>
+                    <span class="main-content__area-value">Turkish</span>
+                </div>
+                <div class="main-content__category mt-2 text-3xl font-semibold">
+                    <span>Category: </span>
+                    <span class="main-content__category-value"></span>
+                </div>
+                <div class="main-content__recipes mt-2 text-2xl font-semibold mb-4">
+                    <span>Recipes: </span>
+                    <ul class="main-content__recipes-list flex flex-wrap text-base mt-4">
+
+                    </ul>
+                </div>
+                <div class="main-content__tags mt-2 text-2xl font-semibold mb-4">
+                    <span>Tags: </span>
+                    <ul class="main-content__tags-list flex flex-wrap text-base mt-4">
+
+                    </ul>
+                </div>
+                <div class="main-content__links">
+                    <a class="source-link py-1 px-3 text-white rounded-md border-2 bg-[#198754] border-[#198754] hover:bg-[#157347] hover:border-[#146c43] active:bg-[#146c43] active:border-[#13653f]" href="">Source</a>
+                    <a class="youtube-link py-1 px-3 text-white rounded-md border-2 bg-[#dc3545] border-[#dc3545] hover:bg-[#bb2d3b] hover:border-[#b02a37] active:bg-[#b02a37] active:border-[#a52834]" href="">Youtube</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- ========== End Main Content ========== -->
+    
+
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/functionality.js" type="module"></script>
+    <script src="../js/details.js" type="module"></script>
+</body>
+</html>

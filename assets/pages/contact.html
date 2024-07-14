@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/logo.png">
+    <link rel="stylesheet" href="../css/dist/all.min.css">
+    <link rel="stylesheet" href="../css/dist/output.css">
+    <link rel="stylesheet" href="../css/dist/style.css">
+    <title>Yummy</title>
+</head>
+<body class="bg-[#0D0D0D]">
+
+    <!-- ========== Sidenav ========== -->
+    <nav class="sidenav fixed top-0 -left-[15.8rem] h-screen flex w-80 transition-all ease-in-out duration-500 z-10">
+        <div class="sidenav__content text-white w-[79%] flex flex-col justify-between p-6 bg-[#0d0d0d]">
+            <div class="sidenav__links overflow-hidden">
+                <ul class="sidenav__links-list overflow-hidden relative -bottom-28">
+                    <li class="sidenav__link sidenav__link-search my-4 relative -bottom-32"><a href="./search.html">Search</a></li>
+                    <li class="sidenav__link sidenav__link-categories my-4 relative -bottom-32"><a href="../../index.html">Categories</a></li>
+                    <li class="sidenav__link sidenav__link-area my-4 relative -bottom-32"><a href="../../index.html">Area</a></li>
+                    <li class="sidenav__link sidenav__link-ingredients my-4 relative -bottom-32"><a href="../../index.html">Ingerdients</a></li>
+                    <li class="sidenav__link sidenav__link-contact my-4 relative -bottom-32"><a href="">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="sidenav__copyrights">
+                <div class="sidenav__social-links">
+                    <a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.twitter.com"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-solid fa-globe"></i></a>
+                </div>
+                <span>Copyright Â© 2019 All Rights
+                    Reserved.</span>
+            </div>
+        </div>
+        <div class="sidenav__side-bar w-[21%] flex flex-col py-6 px-2 items-center justify-between bg-white">
+            <a class="sidenav__link-home" href="../../index.html"><img class="size-12" src="../images/logo.png" alt="logo"></a>
+            <button class="sidenav__controller-button border-0 outline-0 w-full text-black">
+                <i class="fa-solid fa-bars w-full h-full text-4xl"></i>
+                <i class="fa-solid fa-xmark w-full h-full text-4xl hidden"></i>
+            </button>
+            <div class="flex flex-col text-black space-y-1">
+                <a href="#"><i class="fa-solid fa-globe"></i></a>
+                <a href="#"><i class="fa-solid fa-share-nodes"></i></a>
+            </div>
+        </div>
+    </nav>
+    <!-- ========== End Sidenav ========== -->
+    
+    <!-- ========== Main Content ========== -->
+    <main class="main-content h-screen">
+        <form class="contact-form h-full flex items-center">
+            <div class="container py-6 ps-20 pe-4 flex flex-wrap">
+                <div class="w-full md:w-6/12 p-3">
+                    <input class="contact-form__input-field contact-form__input-name w-full px-3 py-2 border-[.0625rem] border-white rounded-md  outline-0 transition-all focus:border-[#86b7fe]" type="text" placeholder="Enter Your Name">
+                    <div class="contact-form__invalid contact-form__invalid-name hidden justify-center items-center p-4 my-2 text-[#842029] bg-[#f8d7da] border-[#f5c2c7] border-[1px] rounded-md text-center">
+                        Empty strings, Special characters, and numbers are not allowed
+                    </div>
+                </div>
+                <div class="w-full md:w-6/12 p-3">
+                    <input class="contact-form__input-field contact-form__input-email w-full px-3 py-2 border-[.0625rem] border-white rounded-md  outline-0 transition-all focus:border-[#86b7fe]" type="email" placeholder="Enter Your Email">
+                    <div class="contact-form__invalid contact-form__invalid-email hidden justify-center items-center p-4 my-2 text-[#842029] bg-[#f8d7da] border-[#f5c2c7] border-[1px] rounded-md text-center">
+                        Email not valid ex. example@xyz.com
+                    </div>
+                </div>
+                <div class="w-full md:w-6/12 p-3">
+                    <input class="contact-form__input-field contact-form__input-phone w-full px-3 py-2 border-[.0625rem] border-white rounded-md  outline-0 transition-all focus:border-[#86b7fe]" type="tel" placeholder="Enter Your Phone">
+                    <div class="contact-form__invalid contact-form__invalid-phone hidden justify-center items-center p-4 my-2 text-[#842029] bg-[#f8d7da] border-[#f5c2c7] border-[1px] rounded-md text-center">
+                        Enter valid phone number ex. (+01)2345678, +012345678, 2345678
+                    </div>
+                </div>
+                <div class="w-full md:w-6/12 p-3">
+                    <input class="contact-form__input-field contact-form__input-age w-full px-3 py-2 border-[.0625rem] border-white rounded-md  outline-0 transition-all focus:border-[#86b7fe]" type="number" placeholder="Enter Your Age"><div class="contact-form__invalid contact-form__invalid-age hidden justify-center items-center p-4 my-2 text-[#842029] bg-[#f8d7da] border-[#f5c2c7] border-[1px] rounded-md text-center">
+                        Enter valid Age: at least 18 years old
+                    </div>
+                </div>
+                <div class="w-full md:w-6/12 p-3">
+                    <input class="contact-form__input-field contact-form__input-password w-full px-3 py-2 border-[.0625rem] border-white rounded-md  outline-0 transition-all focus:border-[#86b7fe]" type="text" placeholder="Enter Your Password">
+                    <div class="contact-form__invalid contact-form__invalid-password hidden justify-center items-center p-4 my-2 text-[#842029] bg-[#f8d7da] border-[#f5c2c7] border-[1px] rounded-md text-center">
+                        Enter valid password *Minimum eight characters, at least one letter and one number*
+                    </div>
+                </div>
+                <div class="w-full md:w-6/12 p-3">
+                    <input class="contact-form__input-field contact-form__input-repassword w-full px-3 py-2 border-[.0625rem] border-white rounded-md  outline-0 transition-all focus:border-[#86b7fe]" type="text" placeholder="Re-enter Your Password">
+                    <div class="contact-form__invalid contact-form__invalid-repassword hidden justify-center items-center p-4 my-2 text-[#842029] bg-[#f8d7da] border-[#f5c2c7] border-[1px] rounded-md text-center">
+                        Password doesn't match
+                    </div>
+                </div>
+                <div class="flex justify-center items-center w-full">
+                    <button class="contact-form__submit rounded-md cursor-pointer transition-all py-[0.375rem] px-3 text-[#dc3545] border-[.0625rem] border-[#dc3545] hover:text-[#fff] hover:bg-[#dc3545] disabled:bg-transparent disabled:pointer-events-none disabled:opacity-65" disabled type="submit">Submit</button>
+                </div>
+            </div>
+        </form>
+    </main>
+    <!-- ========== End Main Content ========== -->
+    
+
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/functionality.js" type="module"></script>
+    <script src="../js/contact.js" type="module"></script>
+</body>
+</html>
