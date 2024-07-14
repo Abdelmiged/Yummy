@@ -15,7 +15,7 @@ export function createMainPageElement(data) {
     element = $(element).on("click", async function() {
         await storeData(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${$(this).attr("mealid")}`);
 
-        window.location.href = `${window.location.origin}/${window.location.pathname}/src/assets/pages/details.html`;
+        window.location.href = `${window.location.origin}/Yummy/assets/pages/details.html`;
 
         // For local testing
         // window.location.href = `${window.location.origin}/src/assets/pages/details.html`;
